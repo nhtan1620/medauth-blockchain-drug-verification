@@ -32,7 +32,7 @@ sequenceDiagram
     participant API as API Gateway
     participant Ledger as Permissioned Ledger
 
-<img width="413" height="848" alt="Screenshot 2026-09-24 at 6 03 46 PM" src="https://github.com/user-attachments/assets/a991d8f4-fe13-4ce4-9271-f762ec95a412" />
+<img width="412" height="852" alt="Screenshot 2026-09-24 at 6 05 22 PM" src="https://github.com/user-attachments/assets/0c3a3747-294e-4914-9c46-c9c48132196b" />
 
     Pharmacist->>App: Scan GS1 Data Matrix
     App->>API: POST /api/verify {gtin, serial}
