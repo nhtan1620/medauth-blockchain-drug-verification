@@ -32,8 +32,6 @@ sequenceDiagram
     participant API as API Gateway
     participant Ledger as Permissioned Ledger
 
-<img width="412" height="852" alt="Screenshot 2026-09-24 at 6 05 22 PM" src="https://github.com/user-attachments/assets/0c3a3747-294e-4914-9c46-c9c48132196b" />
-
     Pharmacist->>App: Scan GS1 Data Matrix
     App->>API: POST /api/verify {gtin, serial}
     API->>Ledger: Lookup SGTIN + event trail
@@ -41,6 +39,7 @@ sequenceDiagram
     API-->>App: AUTHENTIC / COUNTERFEIT_SUSPECTED / BARCODE_NOT_FOUND
     App-->>Pharmacist: Colour-coded result + event trail
 ```
+<img width="412" height="852" alt="Screenshot 2026-09-24 at 6 05 22 PM" src="https://github.com/user-attachments/assets/0c3a3747-294e-4914-9c46-c9c48132196b" />
 
 Result states are never colour-only — each pairs an icon, a colour, and
 plain-language text (WCAG 2.1 AA):
