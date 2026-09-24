@@ -1,0 +1,20 @@
+{
+  "name": "medauth-pack-lifecycle",
+  "version": "1.0.0",
+  "description": "Hyperledger Fabric chaincode implementing the MedAuth pack lifecycle (commission, ship, receive, dispense, recall) for the permissioned pilot network.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "fabric-contract-api": "^2.5.4",
+    "fabric-shim": "^2.5.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "license": "MIT"
+}

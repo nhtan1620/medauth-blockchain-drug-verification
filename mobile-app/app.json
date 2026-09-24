@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "MedAuth",
+    "slug": "medauth-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#0B5D4C"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "MedAuth needs camera access to scan a medication's GS1 barcode for verification."
+      }
+    },
+    "android": {
+      "package": "com.wissengroup.medauth",
+      "permissions": ["CAMERA"]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "MedAuth needs camera access to scan a medication's GS1 barcode for verification."
+        }
+      ]
+    ]
+  }
+}
