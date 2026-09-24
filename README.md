@@ -1,5 +1,7 @@
 # MedAuth — Blockchain Medication Authenticity Verification
 
+<img width="416" height="852" alt="Screenshot 2026-09-24 at 6 02 00 PM" src="https://github.com/user-attachments/assets/bd88efaa-1ab3-4620-a6d9-ac466aad7889" />
+
 [![CI](https://github.com/nhtan1620/medauth-blockchain-drug-verification/actions/workflows/ci.yml/badge.svg)](../../actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -21,12 +23,16 @@ data completely off the ledger.
 
 ## How verification works
 
+<img width="414" height="853" alt="Screenshot 2026-09-24 at 6 02 50 PM" src="https://github.com/user-attachments/assets/ec0edf6d-fec4-4466-8494-56b1e8d2d8cf" />
+
 ```mermaid
 sequenceDiagram
     participant Pharmacist
     participant App as Mobile App
     participant API as API Gateway
     participant Ledger as Permissioned Ledger
+
+<img width="413" height="848" alt="Screenshot 2026-09-24 at 6 03 46 PM" src="https://github.com/user-attachments/assets/a991d8f4-fe13-4ce4-9271-f762ec95a412" />
 
     Pharmacist->>App: Scan GS1 Data Matrix
     App->>API: POST /api/verify {gtin, serial}
