@@ -8,7 +8,7 @@ wholesaler, pharmacy, or a read-only regulator — verify in under a second
 whether a medication pack is genuine, using a **permissioned blockchain
 ledger** (Hyperledger Fabric) and a **zero-PII-on-chain** design.
 
-> Built from the MIS611 Group 3 project brief — this repository implements
+> Built from the MIS611 Information Systems Capstone project — this repository implements
 > the working pilot: API gateway, Fabric chaincode, and mobile app.
 
 ## Why MedAuth
